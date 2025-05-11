@@ -21,7 +21,7 @@ Users can choose an option by entering the corresponding number.
 4.xUnit is used for unit testing. To run the tests, ensure that xUnit is installed.
   If you encounter issues with the tests:
   Check the test configurations and ensure that all dependencies are correctly set up.
-  If specific tests fail or cause issues, you can comment them out temporarily to continue development:
+  If specific tests fail or cause issues, you can comment them out temporarily to continue development.
 
 "Top N Most Borrowed Books" Feature
 
