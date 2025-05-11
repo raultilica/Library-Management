@@ -23,3 +23,15 @@ Users can choose an option by entering the corresponding number.
   Check the test configurations and ensure that all dependencies are correctly set up.
   If specific tests fail or cause issues, you can comment them out temporarily to continue development:
 
+"Top N Most Borrowed Books" Feature
+
+How it works:
+- Borrowing Calculation: For each book, we calculate the difference between the initial quantity (how many copies were available at the start) and the current quantity (how many copies are left in the library). This difference gives us the number of borrowings for that book.
+- Sorting: The books are sorted in descending order based on the number of borrowings.
+- Top N: Users can specify how many of the top books they want to display.
+
+Why it’s special:
+- Data-Driven Insights: This feature transforms raw inventory data into meaningful insights, helping librarians and users understand reading trends and make informed decisions.
+- Seamless Integration: The logic is fully integrated into the service layer without disrupting the core CRUD functionality, demonstrating clean separation of concerns and maintainable code architecture.
+- Custom Ranking on Demand: Users aren’t limited to a fixed number of results — they can dynamically choose how many top titles to see, which improves interactivity and supports both quick overviews and deeper analysis.
+
