@@ -1,37 +1,85 @@
-Library Management System
+# Library Management System
 
-Running Instructions
-1. Make sure your environment is set up for running C# applications. .NET SDK required.
-2. Run the Application. You can run the application through Visual Studio.
-3. The menu will display the following options:
+## Table of Contents
+1. [Introduction](#introduction)  
+2. [Requirements](#requirements)  
+3. [Running Instructions](#running-instructions)  
+4. [Menu Options](#menu-options)  
+5. [Top N Most Borrowed Books Feature](#top-n-most-borrowed-books-feature)  
+    - [How It Works](#how-it-works)  
+    - [Why It’s Special](#why-its-special)  
+6. [Unit Testing](#unit-testing)  
 
---- Library Management ---
-1. Add book
-2. View all books
-3. Update book
-4. Delete book
-5. Search books
-6. Borrow book
-7. Return book
-8. Show most borrowed books
-0. Exit
-Choose an option: 
-Users can choose an option by entering the corresponding number.
+---
 
-4.xUnit is used for unit testing. To run the tests, ensure that xUnit is installed.
-  If you encounter issues with the tests:
-  Check the test configurations and ensure that all dependencies are correctly set up.
-  If specific tests fail or cause issues, you can comment them out temporarily to continue development.
+## Introduction
+A simple console-based Library Management System written in C#.  
+Supports basic CRUD operations on books, as well as borrowing and returning functionality, search, and analytics on most-borrowed titles.
 
-"Top N Most Borrowed Books" Feature
+## Requirements
+- .NET SDK (>= .NET 6.0)  
+- Visual Studio 2022 or later (or VS Code with C# extensions)  
 
-How it works:
-- Borrowing Calculation: For each book, we calculate the difference between the initial quantity (how many copies were available at the start) and the current quantity (how many copies are left in the library). This difference gives us the number of borrowings for that book.
-- Sorting: The books are sorted in descending order based on the number of borrowings.
-- Top N: Users can specify how many of the top books they want to display.
+## Running Instructions
+1. **Set up your environment**  
+   - Install the .NET SDK from the [official website](https://dotnet.microsoft.com/download).  
+   - Open the solution in Visual Studio or your preferred IDE.
 
-Why it’s special:
-- Data-Driven Insights: This feature transforms raw inventory data into meaningful insights, helping librarians and users understand reading trends and make informed decisions.
-- Seamless Integration: The logic is fully integrated into the service layer without disrupting the core CRUD functionality, demonstrating clean separation of concerns and maintainable code architecture.
-- Custom Ranking on Demand: Users aren’t limited to a fixed number of results — they can dynamically choose how many top titles to see, which improves interactivity and supports both quick overviews and deeper analysis.
+2. **Run the Application**  
+   - In Visual Studio, press **F5** or click **Run**.  
+   - In a terminal, navigate to the project folder and execute:  
+     ```bash
+     dotnet run --project LibraryManagementSystem
+     ```
 
+3. **Interacting with the Menu**  
+   When the application starts, you will see:
+Enter the number corresponding to your choice and follow the prompts.
+
+## Menu Options
+- **Add book**: Enter title, author, ISBN, quantity, etc.  
+- **View all books**: Display a list of all books in the library.  
+- **Update book**: Modify details of an existing book.  
+- **Delete book**: Remove a book from the library.  
+- **Search books**: Search by title, author, or ISBN.  
+- **Borrow book**: Decrease the available quantity by one.  
+- **Return book**: Increase the available quantity by one.  
+- **Show most borrowed books**: Analyze and display data-driven insights.  
+- **Exit**: Close the application.
+
+## Top N Most Borrowed Books Feature
+
+### How It Works
+1. **Borrowing Calculation**  
+- For each book, calculate:  
+  ```
+  borrowCount = initialQuantity – currentQuantity
+  ```
+2. **Sorting**  
+- Sort books in **descending** order by `borrowCount`.
+3. **Top N**  
+- Prompt the user to enter **N** to display the top N most-borrowed titles.
+
+### Why It’s Special
+- **Data-Driven Insights**  
+Transforms raw inventory data into actionable trends to help librarians make informed decisions.  
+- **Seamless Integration**  
+Fully integrated into the service layer without disrupting core CRUD operations, ensuring clean separation of concerns.  
+- **Custom Ranking on Demand**  
+Users can dynamically choose how many top titles to view—perfect for both quick overviews and deep dives.
+
+## Unit Testing
+- **Framework**: xUnit  
+- **Running Tests**:  
+1. Ensure xUnit is installed and referenced in the test project.  
+2. In Visual Studio, open **Test Explorer** and click **Run All**.  
+3. Or via command line:  
+  ```bash
+  dotnet test LibraryManagementSystem.Tests
+  ```
+- **Troubleshooting**:  
+- Verify test project references the correct versions of the main project assemblies.  
+- If specific tests fail or cause issues, comment them out temporarily to continue development.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
