@@ -66,12 +66,8 @@ Users can dynamically choose how many top titles to view—perfect for both quic
 ## Unit Testing
 - **Framework**: xUnit  
 - **Running Tests**:  
-1. Ensure xUnit is installed and referenced in the test project.  
-2. In Visual Studio, open **Test Explorer** and click **Run All**.  
-3. Or via command line:  
-  ```bash
-  dotnet test LibraryManagementSystem.Tests
-  ```
+1. Ensure xUnit is installed and referenced in the test project.
+   
 - **Troubleshooting**:  
 - Verify test project references the correct versions of the main project assemblies.  
 - If specific tests fail or cause issues, comment them out temporarily to continue development.
