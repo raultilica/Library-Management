@@ -26,11 +26,6 @@ Supports basic CRUD operations on books, as well as borrowing and returning func
    - Open the solution in Visual Studio or your preferred IDE.
 
 2. **Run the Application**  
-   - In Visual Studio, press **F5** or click **Run**.  
-   - In a terminal, navigate to the project folder and execute:  
-     ```bash
-     dotnet run --project LibraryManagementSystem
-     ```
 
 3. **Interacting with the Menu**  
    When the application starts, you will see:
@@ -81,5 +76,3 @@ Users can dynamically choose how many top titles to view—perfect for both quic
 - Verify test project references the correct versions of the main project assemblies.  
 - If specific tests fail or cause issues, comment them out temporarily to continue development.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
