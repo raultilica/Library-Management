@@ -1,0 +1,25 @@
+Library Management System
+
+Running Instructions
+1. Make sure your environment is set up for running C# applications.
+2.Run the Application. You can run the application through Visual Studio
+3.The menu will display the following options:
+
+--- Library Management ---
+1. Add book
+2. View all books
+3. Update book
+4. Delete book
+5. Search books
+6. Borrow book
+7. Return book
+8. Show most borrowed books
+0. Exit
+Choose an option: 
+Users can choose an option by entering the corresponding number.
+
+4.xUnit is used for unit testing. To run the tests, ensure that xUnit is installed.
+  If you encounter issues with the tests:
+  Check the test configurations and ensure that all dependencies are correctly set up.
+  If specific tests fail or cause issues, you can comment them out temporarily to continue development:
+
