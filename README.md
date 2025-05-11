@@ -32,14 +32,14 @@ Supports basic CRUD operations on books, as well as borrowing and returning func
 Enter the number corresponding to your choice and follow the prompts.
 
 ## Menu Options
-- **Add book**: Enter title, author, ISBN, quantity, etc.  
+- **Add book**: Enter title, author, quantity.
 - **View all books**: Display a list of all books in the library.  
 - **Update book**: Modify details of an existing book.  
 - **Delete book**: Remove a book from the library.  
-- **Search books**: Search by title, author, or ISBN.  
-- **Borrow book**: Decrease the available quantity by one.  
-- **Return book**: Increase the available quantity by one.  
-- **Show most borrowed books**: Analyze and display data-driven insights.  
+- **Search books**: Search by title, author.
+- **Borrow book**: Decrease the available quantity.
+- **Return book**: Increase the available quantity.
+- **Show most borrowed books**.
 - **Exit**: Close the application.
 
 ## Top N Most Borrowed Books Feature
