@@ -1,9 +1,9 @@
 Library Management System
 
 Running Instructions
-1. Make sure your environment is set up for running C# applications.
-2.Run the Application. You can run the application through Visual Studio
-3.The menu will display the following options:
+1. Make sure your environment is set up for running C# applications. .NET SDK required.
+2. Run the Application. You can run the application through Visual Studio.
+3. The menu will display the following options:
 
 --- Library Management ---
 1. Add book
